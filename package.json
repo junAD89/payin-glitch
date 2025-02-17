@@ -1,0 +1,31 @@
+{
+  "name": "glitch-hello-node",
+  "version": "0.1.0",
+  "description": "A simple Node app with Fastify and PayPal integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.0.0",
+    "@paypal/checkout-server-sdk": "1.0.3",
+    "dotenv": "^16.0.0",
+    "fastify": "^4.0.0",
+    "axios": "^1.6.0",
+    "@fastify/static": "^6.0.0",
+    "querystring": "^0.2.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "fastify",
+    "paypal"
+  ]
+}
