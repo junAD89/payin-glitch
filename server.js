@@ -74,6 +74,9 @@ fastify.post('/api/orders/:orderID/capture', async (request, reply) => {
       reply.send({ status: 'COMPLETED', details: captureResponse.result }); // Envoyer une réponse de succès
     } else {
       // Échec de la capture
+      
+      
+      
       console.error('Erreur lors de la capture du paiement:', captureResponse);
       reply.status(500).send({ error: 'La capture du paiement a échoué', details: captureResponse });
     }
